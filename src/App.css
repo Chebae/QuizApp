@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+*{
+  padding:0;
+  margin:0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
+width:100%;
+height:max-content;
+  background: url(https://source.unsplash.com/1366x768/?night) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.opc {
+  display: flex;
+  flex-wrap: wrap
+}
+.app h1{
+  color: #08b640;
+  z-index: 1;
+  position:relative;
+
 }
 
-.App-link {
-  color: #61dafb;
+.app button{
+  z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hide{
+height:96.8vh;
+}
+
+
+.correct-answers{
+  color:#fff;
+}
+.quiz-container {
+  position:relative;
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 90%;
+  z-index: 1;
+}
+
+.question-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color:#000000c4;
+  width:75%;
+  padding: 5px 50px;
+  border-radius: 12px
+}
+
+.question-container h2{
+  color:#08b640;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: grey;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+}
+
+.selected {
+  background-color: chocolate;
+}
+
+.correct {
+  background-color: lightgreen;
+  color: #000
+}
+
+.incorrect{
+  background-color:red;
+}
+.none{
+  display:none
+}
+
+.fixed{
+  position:fixed;
+  left: 80%;
+  top:50%;
+  background-color: goldenrod;
+}
+
+.score {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #08b640;
 }
